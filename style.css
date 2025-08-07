@@ -1,0 +1,103 @@
+body {
+background: #ffc66b;
+background: radial-gradient(circle, rgba(255, 198, 107, 1) 0%, rgba(255, 82, 171, 1) 100%);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+h1 {
+  font-family: 'Tektur', sans-serif;
+  font-size: 55px;
+  color: black;
+  text-align: center;
+}
+h6 {
+  font-size: 25px;
+  color: black;
+  text-align: center;
+
+}
+
+.gemunu-libre-<uniquifier> {
+  font-family: "Gemunu Libre", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+button {
+font-family: Verdana;
+    background-color: deeppink;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: hotpink;
+}
+
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.home-button {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.home-button:hover {
+   background-color: #737373 ;
+ }
+
+ .btn-group .button {
+   background-color: hotpink;
+   border: 1px solid deeppink;
+   color: white;
+   padding: 10px 15px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   cursor: pointer;
+   float: center;
+   hover: background-color: #FFB5DB;
+ }
+
+
+.container {
+  text-align: left;
+}
+.button-3d {
+  background-color: deeppink;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 6px 0 #a00060, 0 6px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.button-3d.active {
+  background-color: #b3005f;
+  box-shadow: 0 2px 0 #5e0030, 0 2px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(4px);
+}
+
+
+
