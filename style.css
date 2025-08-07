@@ -29,7 +29,7 @@ font-family: Verdana;
     color: white;
     border: none;
     padding: 12px 24px;
-    font-size: 18px;
+    font-size: 38px;
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -98,6 +98,7 @@ button:hover {
   box-shadow: 0 2px 0 #5e0030, 0 2px 8px rgba(0, 0, 0, 0.3);
   transform: translateY(4px);
 }
+
 
 
 
