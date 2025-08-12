@@ -92,7 +92,7 @@ async function showRandomVideo() {
   const snippet = randomVideo.snippet;
   currentVideoId = snippet.resourceId.videoId;
 
-  // עדכון מידע
+  // שמירת המידע מבלי להציג אותו עדיין
   const title = snippet.title || "unknown";
   const channel = snippet.videoOwnerChannelTitle || snippet.channelTitle || "unknown";
   const date = snippet.publishedAt ? new Date(snippet.publishedAt).getFullYear() : "unknown";
@@ -101,21 +101,24 @@ async function showRandomVideo() {
      <strong>🎤 artist:</strong> ${channel}<br>
      <strong>📅 year:</strong> ${date}`;
 
+  // הצגת הנגן והכפתור
+  document.getElementById("player").style.display = "block";
+  document.getElementById("song-info").style.display = "none";
+  document.getElementById("reveal-info").style.display = "inline-block";
+
   isReadyToPlay = true;
   clearTimeout(stopTimeout);
   player.loadVideoById(currentVideoId);
-    player.loadVideoById(currentVideoId);
 
-    // מוסיפים ניגון אוטומטי לפי הזמן שנבחר
-    if (playDuration > 0) {
-      setTimeout(() => {
-        playFor(playDuration);
-      }, 1000); // דחייה קלה כדי לוודא שהשיר התחיל להיטען
-    } else {
-      player.playVideo(); // אם נבחר "מלא", פשוט נגן
-    }
-
+  if (playDuration > 0) {
+    setTimeout(() => {
+      playFor(playDuration);
+    }, 1000);
+  } else {
+    player.playVideo();
+  }
 }
+
 
 
 function playFor(seconds) {
@@ -137,4 +140,9 @@ function playFull() {
   clearTimeout(stopTimeout);
   player.seekTo(0, true);
   player.playVideo();
+}
+
+function revealSongInfo() {
+  document.getElementById("song-info").style.display = "block";
+  document.getElementById("reveal-info").style.display = "none";
 }
