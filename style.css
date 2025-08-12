@@ -28,8 +28,8 @@ font-family: Verdana;
     background-color: deeppink;
     color: white;
     border: none;
-    padding: 12px 24px;
-    font-size: 18px;
+    padding: 10px 20px;
+    font-size: 16px;
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -40,6 +40,22 @@ button:hover {
   background-color: hotpink;
 }
 
+#song-info {
+  display: none; /* מוסתר בהתחלה */
+}
+
+#player {
+  display: none; /* מוסתר בהתחלה */
+  margin: 0 auto; /* ממרכז את הוידאו */
+}
+
+#player iframe {
+  display: block;
+  margin: 0 auto; /* גם את ה־iframe בפנים */
+}
+
+
+
 
 .button:active {
   background-color: #3e8e41;
@@ -47,7 +63,22 @@ button:hover {
   transform: translateY(4px);
 }
 
+#roll-btn {
+font-family: Verdana;
+    background-color: deeppink;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    font-size: 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
 
+#roll-btn:hover {
+  background-color: hotpink;
+}
 .home-button {
     background-color: gray;
     color: white;
@@ -98,10 +129,6 @@ button:hover {
   box-shadow: 0 2px 0 #5e0030, 0 2px 8px rgba(0, 0, 0, 0.3);
   transform: translateY(4px);
 }
-
-
-
-
 
 
 
