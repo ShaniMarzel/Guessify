@@ -92,16 +92,34 @@ font-family: Verdana;
 .home-button:hover {
    background-color: #737373 ;
  }
+.btn-group {
+  display: flex;
+  justify-content: space-between; /* מרווחים שווים */
+  gap: 8px; /* רווח קטן בין הכפתורים */
+  margin: 0 auto;
+  width: 100%; /* מכסה את כל הרוחב */
+  max-width: 400px; /* שלא יראו ענק במסך גדול */
+}
+
+.btn-group button {
+  flex: 1; /* כל כפתור יקבל את אותו הרוחב */
+  font-size: 18px; /* יותר גדול לנייד */
+  padding: 14px 0; /* גובה נוח ללחיצה באצבע */
+  border-radius: 6px;
+}
 
  .btn-group .button {
    background-color: hotpink;
    border: 1px solid deeppink;
    color: white;
-   padding: 10px 15px;
-   text-align: center;
-   text-decoration: none;
+
+    flex: 1; /* כל כפתור יקבל את אותו הרוחב */
+    font-size: 18px; /* יותר גדול לנייד */
+    padding: 14px 0; /* גובה נוח ללחיצה באצבע */
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
    display: inline-block;
-   font-size: 16px;
    cursor: pointer;
    float: center;
    hover: background-color: #FFB5DB;
