@@ -53,6 +53,7 @@ button:hover {
     padding: 0.8rem 0;
     font-size: clamp(1rem, 4vw, 1.5rem); /* פונט מסתגל */
     border-radius: 6px;
+    width: 33%;
 }
 
 
@@ -175,6 +176,7 @@ font-family: Verdana;
   box-shadow: 0 2px 0 #5e0030, 0 2px 8px rgba(0, 0, 0, 0.3);
   transform: translateY(4px);
 }
+
 
 
 
