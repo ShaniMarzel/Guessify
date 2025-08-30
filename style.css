@@ -39,23 +39,22 @@ font-family: Verdana;
 button:hover {
   background-color: hotpink;
 }
-/* קונטיינר שמכיל את הכפתורים */
 .button-3d-group {
     display: flex;
     justify-content: space-between; /* מרווח שווה בין הכפתורים */
-    width: 100%;                    /* תופס את כל הרוחב של ההורה */
-    max-width: 400px;               /* מגבלה למסכים גדולים */
-    margin: 0 auto;                 /* מרכז בקונטיינר */
-    gap: 2%;                        /* רווח קטן בין הכפתורים */
+    width: 100%;
+    max-width: 400px; /* מגבלה למסכים רחבים */
+    margin: 0 auto;
+    gap: 6px; /* רווח בין הכפתורים */
 }
 
-/* הכפתורים עצמם */
 .button-3d-group .button-3d {
-    flex: 1;                         /* כל כפתור שווה בגודל */
-    width: 32%;                       /* 3 כפתורים × 32% + gap = מתאים למסך */
-    padding: 0.8rem 0;                /* גובה נוח ללחיצה */
-    font-size: clamp(1rem, 4vw, 1.5rem); /* פונט מסתגל לכל גודל מסך */
+    flex: 1; /* כל כפתור שווה בגודל, תופס את כל הרוחב */
+    padding: 0.8rem 0;
+    font-size: clamp(1rem, 4vw, 1.5rem); /* פונט מסתגל */
+    border-radius: 6px;
 }
+
 
 
 #song-info {
@@ -176,6 +175,7 @@ font-family: Verdana;
   box-shadow: 0 2px 0 #5e0030, 0 2px 8px rgba(0, 0, 0, 0.3);
   transform: translateY(4px);
 }
+
 
 
 
